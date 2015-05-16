@@ -17,3 +17,10 @@ Router.route('/todos/:_id', {
   action: 'detail',
   where: 'client'
 });
+
+Router.route('/todos/:_id/edit', {
+  name: 'todos.edit',
+  controller: 'TodosController',
+  action: 'edit',
+  where: 'client'
+});
