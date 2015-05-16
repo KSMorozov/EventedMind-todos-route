@@ -23,6 +23,10 @@ Template.TodosDetail.events({
 Template.TodosDetail.helpers({
   isMyTodo: function () {
     return this.userId === Meteor.userId();
+  },
+
+  user: function () {
+    return Meteor.users.findOne({_id: this.userId});
   }
 });
 
