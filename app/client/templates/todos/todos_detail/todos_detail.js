@@ -2,7 +2,7 @@
 /* TodosDetail: Event Handlers */
 /*****************************************************************************/
 Template.TodosDetail.events({
-  'submit form': function (e, template) {
+  'submit form#edit-todo': function (e, template) {
     e.preventDefault();
 
     Todos.update({_id: this._id}, {

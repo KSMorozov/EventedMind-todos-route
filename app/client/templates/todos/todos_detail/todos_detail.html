@@ -12,7 +12,7 @@
   {{/contentFor}}
 
   {{#if get 'isEditing'}}
-    <form class="form edit-todo">
+    <form id="edit-todo" class="form edit-todo">
       <input type="text" name="subject" value="{{subject}}" placeholder="Subject"/>
       <textarea name="description" placeholder="Description">{{description}}</textarea>
       <input type="submit" class="btn" value="Save"/>
@@ -33,4 +33,6 @@
       {{/linkTo}}
     {{/if}}
   {{/if}}
+
+  {{> CommentsList}}
 </template>
